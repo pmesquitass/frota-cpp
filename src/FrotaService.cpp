@@ -1,5 +1,6 @@
 #include "FrotaService.hpp"
 #include <string>
+#include <iostream>
 FrotaService::FrotaService(sqlite3* conexao){db=conexao;}
 
 void FrotaService::cadastrarVeiculo(Veiculo v){
@@ -16,3 +17,20 @@ void FrotaService::cadastrarVeiculo(Veiculo v){
     sqlite3_finalize(stmt);
 
 }
+void FrotaService::cadastrarMotorista(Motorista m){
+        std::string sql = "INSERT INTO motoristas (nome, data_nascimento, cnh, categoria) VALUES (?, ?, ?, ?)";
+        sqlite3_stmt* stmt;
+        sqlite3_prepare_v2(db,sql.c_str(),-1,&stmt,nullptr);
+
+        sqlite3_bind_text(stmt,1,m.getNome().c_str(),-1,SQLITE_TRANSIENT);
+        sqlite3_bind_text(stmt,2,m.getDataNascimento().c_str(),-1,SQLITE_TRANSIENT);
+        sqlite3_bind_text(stmt,3,m.getCNH().c_str(),-1,SQLITE_TRANSIENT);
+        sqlite3_bind_text(stmt,4,m.getCategoria().c_str(),-1,SQLITE_TRANSIENT);
+        sqlite3_step(stmt);
+        int stepResult = sqlite3_step(stmt);
+        if (stepResult != SQLITE_DONE) {
+    std::cerr << "Erro ao cadastrar motorista: " << sqlite3_errmsg(db) << std::endl;
+}
+        sqlite3_finalize(stmt);
+}
+
