@@ -1,5 +1,7 @@
 # depslib dependency file v1.0
-1788747127 source:c:\users\pedro\projetos\frota-cpp\src\frotaservice.cpp
+1788791445 source:c:\users\pedro\projetos\frota-cpp\src\frotaservice.cpp
+	"FrotaService.hpp"
+	<string>
 
 1788752596 source:c:\users\pedro\projetos\frota-cpp\src\motorista.cpp
 	"Motorista.hpp"
@@ -71,7 +73,9 @@
 	<sys/uio.h>
 	<math.h>
 
-1788747127 source:c:\users\pedro\projetos\frota-cpp\src\uso.cpp
+1788788346 source:c:\users\pedro\projetos\frota-cpp\src\uso.cpp
+	"Uso.hpp"
+	<string>
 
 1788751882 source:c:\users\pedro\projetos\frota-cpp\src\veiculo.cpp
 	"Veiculo.hpp"
@@ -91,4 +95,11 @@
 
 1788752097 c:\users\pedro\projetos\frota-cpp\include\frota\motorista.hpp
 	<string>
+
+1788787810 c:\users\pedro\projetos\frota-cpp\include\frota\uso.hpp
+	<string>
+
+1788791066 c:\users\pedro\projetos\frota-cpp\include\frota\frotaservice.hpp
+	"sqlite3.h"
+	"Veiculo.hpp"
 
