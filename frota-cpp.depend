@@ -1,7 +1,9 @@
 # depslib dependency file v1.0
 1788747127 source:c:\users\pedro\projetos\frota-cpp\src\frotaservice.cpp
 
-1788747127 source:c:\users\pedro\projetos\frota-cpp\src\motorista.cpp
+1788752596 source:c:\users\pedro\projetos\frota-cpp\src\motorista.cpp
+	"Motorista.hpp"
+	<string>
 
 1788748122 source:c:\users\pedro\projetos\frota-cpp\src\sqlite3.c
 	<vxWorks.h>
@@ -71,5 +73,22 @@
 
 1788747127 source:c:\users\pedro\projetos\frota-cpp\src\uso.cpp
 
-1788747127 source:c:\users\pedro\projetos\frota-cpp\src\veiculo.cpp
+1788751882 source:c:\users\pedro\projetos\frota-cpp\src\veiculo.cpp
+	"Veiculo.hpp"
+	<string>
+
+1788748519 source:c:\users\pedro\projetos\frota-cpp\src\main.cpp
+	<iostream>
+	<fstream>
+	<sstream>
+	"sqlite3.h"
+
+1788748141 c:\users\pedro\projetos\frota-cpp\include\frota\sqlite3.h
+	<stdarg.h>
+
+1788751879 c:\users\pedro\projetos\frota-cpp\include\frota\veiculo.hpp
+	<string>
+
+1788752097 c:\users\pedro\projetos\frota-cpp\include\frota\motorista.hpp
+	<string>
 

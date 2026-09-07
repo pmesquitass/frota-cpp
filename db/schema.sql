@@ -11,7 +11,8 @@ CREATE TABLE IF NOT EXISTS motoristas (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     nome TEXT NOT NULL,
     cnh TEXT NOT NULL UNIQUE,
-    categoria TEXT NOT NULL
+    categoria TEXT NOT NULL,
+    data_nascimento TEXT NOT NULL
 );
 
 CREATE TABLE IF NOT EXISTS usos (
